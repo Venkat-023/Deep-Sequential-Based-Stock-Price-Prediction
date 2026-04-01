@@ -67,86 +67,93 @@ Evaluation Metrics
 The models are evaluated using the following metrics:
 
 MAE (Mean Absolute Error)
+
 MSE (Mean Squared Error)
+
 RMSE (Root Mean Squared Error)
+
 MAPE (Mean Absolute Percentage Error)
+
 R² Score
+
 Directional Accuracy
+
 Results
+
 Performance Comparison
+
 Model	MAE	RMSE	R² Score	Accuracy
+
 LSTM	69.56	92.23	0.78	48.5%
+
 GRU	30.66	42.50	0.9358	99.06%
+
 Bi-LSTM	—	—	—	54.3%
+
 Hybrid LSTM-GRU	49.07	63.24	0.8618	98.5%
 
-(Extracted from table on page 6 of the paper)
 
 Key Observations
+
 GRU performs best overall
+
 Lowest error values
+
 Highest R² score
+
 Strong generalization
+
 Hybrid model performs competitively
+
 Better than standalone LSTM
+
 Slightly below GRU
+
 LSTM shows moderate performance
+
 Struggles with short-term volatility
+
 Bi-LSTM captures trends but lacks precision
-Visual Insights
-Graphs on page 6 show:
-GRU predictions closely match actual prices
-LSTM shows larger deviations during fluctuations
-Hybrid model provides stable but slightly less accurate predictions
+
 Conclusion
-GRU is the most effective model for stock price prediction in this study
+
+GRU is the most effective model for stock price prediction in this study.
+
 Hybrid LSTM-GRU offers strong alternative performance
 LSTM and Bi-LSTM are less effective in capturing complex market patterns
 
 Stock prediction remains difficult due to:
 
 Market volatility
-External influencing factors not captured in historical data
+
+External influencing factors not captured in 
+
+historical data
+
 Future Work
 
 Potential improvements include:
 
 Incorporating news sentiment analysis
+
 Adding macroeconomic indicators
+
 Using real-time data streams
+
 Exploring transformers and attention-based models
+
 Enhancing feature engineering
+
 Tech Stack
+
 Python
-TensorFlow / Keras (assumed from methodology)
+
+TensorFlow / Keras
+
 NumPy
+
 Pandas
+
 Scikit-learn
+
 Matplotlib
-Project Structure (Suggested)
-├── data/
-├── notebooks/
-├── models/
-├── results/
-├── src/
-│   ├── preprocessing.py
-│   ├── models.py
-│   ├── train.py
-│   └── evaluate.py
-├── README.md
-└── requirements.txt
-How to Run
-# Clone the repository
-git clone https://github.com/your-username/stock-price-prediction.git
-
-# Navigate to project directory
-cd stock-price-prediction
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run training
-python src/train.py
-
-# Evaluate models
-python src/evaluate.py
