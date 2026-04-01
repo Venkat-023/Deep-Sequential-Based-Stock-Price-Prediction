@@ -82,15 +82,15 @@ Results
 
 Performance Comparison
 
-Model	MAE	RMSE	R² Score	Accuracy
+Model	 MAE	    RMSE	R² Score	Accuracy
 
-LSTM	69.56	92.23	0.78	48.5%
+LSTM	 69.56	92.23	 0.78	    48.5%
 
-GRU	30.66	42.50	0.9358	99.06%
+GRU	     30.66	42.50	0.9358	    99.06%
 
-Bi-LSTM	—	—	—	54.3%
+Bi-LSTM	  _       _ 		—	    54.3%
 
-Hybrid LSTM-GRU	49.07	63.24	0.8618	98.5%
+LSTM-GRU 49.07	63.24	0.8618	    98.5%
 
 
 Key Observations
